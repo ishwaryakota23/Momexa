@@ -1,0 +1,63 @@
+.sidebar-container {
+    width: 250px;
+    background-color: #f6e6e6;
+    border-right: 1px solid #e6e6e6;
+    padding: 20px;
+    height: 100vh;
+    position: sticky;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+  .logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 40px;
+    color: #ff5e7e;
+    text-align: center;
+  }
+  
+  .nav-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .nav-list li {
+    margin: 15px 0;
+  }
+  
+  .nav-list a {
+    text-decoration: none;
+    color: #333;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-radius: 8px;
+    transition: background 0.2s ease;
+  }
+  
+  .nav-list a:hover,
+  .nav-list .active a {
+    background-color: #ffe4ec;
+    color: #ff4081;
+  }
+  
+  .icon {
+    font-size: 1.5rem;
+    margin-right: 10px;
+  }
+  
+  .label {
+    font-weight: 500;
+  }
+  .nav-bottom {
+    margin-top: auto;
+    list-style: none;
+    padding: 0;
+    border-top: 1px solid #eee;
+    padding-top: 20px;
+  }
+    

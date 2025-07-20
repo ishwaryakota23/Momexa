@@ -1,0 +1,66 @@
+/* Overall Layout */
+.home-container {
+    display: flex;
+    min-height: 100vh;
+    background: linear-gradient(to bottom right, #fff5f0, #e881e8); /* Peachy gradient */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  /* Sidebar Style */
+  .sidebar {
+    width: 250px;
+    padding: 20px;
+    background-color: #ffffff;
+    border-right: 1px solid #f2c6b4; /* Soft border */
+    border-radius: 0 16px 16px 0;
+    box-shadow: 4px 0 12px rgba(255, 187, 153, 0.1); /* Peach shadow */
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .sidebar h2 {
+    font-size: 1.4rem;
+    color: #d95f35;
+    margin-bottom: 30px;
+  }
+  
+  /* Main Feed Area */
+  .feed {
+    flex: 1;
+    padding: 30px 20px;
+    max-width: 650px;
+    margin: 0 auto;
+    overflow-y: auto;
+  height: calc(100vh - 60px);
+  }
+  
+  .feed-title {
+    font-size: 2rem;
+    color: #cc4c28;
+    margin-bottom: 25px;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  /* Optional Scroll Styling */
+  .feed::-webkit-scrollbar {
+    width: 8px;
+  }
+  .feed::-webkit-scrollbar-thumb {
+    background-color: rgba(217, 95, 53, 0.2);
+    border-radius: 20px;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .sidebar {
+      display: none;
+    }
+  
+    .feed {
+      padding: 20px 10px;
+    }
+  }
+  

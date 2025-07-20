@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap'); /* Cursive font */
+
+/* Navbar container */
+.navbar {
+  background: linear-gradient(to right, #edcaee, #e5b4ee); /* Peachy white gradient */
+  border-bottom: 1px solid #f2c6b4;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 30px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 1px 6px rgba(255, 187, 153, 0.2);
+}
+
+/* Logo text */
+.logo-text {
+  font-family: 'Pacifico', cursive;
+  font-size: 1.5rem;
+  color: #470655;
+  text-decoration: none;
+}
+
+/* Navigation links container */
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 24px; /* spacing between links */
+}
+
+/* Navigation links (anchor tags) */
+.nav-links a,
+.logout-button {
+  text-decoration: none;
+  color: #1a1a1a;
+  font-weight: 500;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+/* Hover effect for all nav items */
+.nav-links a:hover,
+.logout-button:hover {
+  color: #d95f35;
+}
+
+/* Optional: Make logout stand out a bit */
+.logout-button {
+  font-weight: 600;
+  color: #333;
+}
